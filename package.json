@@ -1,0 +1,25 @@
+{
+  "name": "i-m-really-object",
+  "version": "1.0.0",
+  "description": "Small Discord bot , just for making fun with my friends :D",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t0nxx/i-m-really-object.git"
+  },
+  "author": "t0ni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t0nxx/i-m-really-object/issues"
+  },
+  "homepage": "https://github.com/t0nxx/i-m-really-object#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "dotenv": "^6.2.0",
+    "node-opus": "^0.3.1",
+    "opusscript": "0.0.6"
+  }
+}
