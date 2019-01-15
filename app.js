@@ -20,7 +20,9 @@ client.on('message', (receivedMessage) => {
             
             testConChannel(receivedMessage ,"555.mp3");
         }else if (primaryCommand == "help"){
-            receivedMessage.channel.send(receivedMessage.author.toString()+" type '*555' for sha5ra or '*a7a' for a7a :D");
+            receivedMessage.channel.send(receivedMessage.author.toString()+'Welcome MotherFucker :3 \n ' 
+            +'Commands are below \n *555 ==== > sha5ra  \n *a7a ==== > a7a \n '
+            +'wait for more updates :D :D \n Author https://fb.com/t0nxx ');
         }else if (primaryCommand == "out"){
             if (receivedMessage.member.voiceChannel) {
                 receivedMessage.member.voiceChannel.leave();
@@ -29,7 +31,7 @@ client.on('message', (receivedMessage) => {
             
         
         }else{
-            receivedMessage.channel.send(receivedMessage.author.toString()+" not valid command ya 3le2 enter !help ");
+            receivedMessage.channel.send(receivedMessage.author.toString()+' not valid command ya 3le2 enter *help ');
         }
         
     }
@@ -69,7 +71,9 @@ const play = (connection , path , receivedMessage) =>{
         
     dispatcher.on('end', () => {
         console.log("End");
-        receivedMessage.member.voiceChannel.leave();
+        setTimeout(() => {
+            receivedMessage.member.voiceChannel.leave();
+        }, 2000);
       });
       
       
