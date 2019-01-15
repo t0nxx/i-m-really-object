@@ -19,6 +19,9 @@ client.on('message', (receivedMessage) => {
         }else if (primaryCommand == "555"){
             
             testConChannel(receivedMessage ,"555.mp3");
+        }else if (primaryCommand == "tez"){
+            
+            testConChannel(receivedMessage ,"tez.mp3");
         }else if (primaryCommand == "help"){
             receivedMessage.channel.send(receivedMessage.author.toString()+'Welcome MotherFucker :3 \n ' 
             +'Commands are below \n *555 ==== > sha5ra  \n *a7a ==== > a7a \n '
