@@ -4,7 +4,8 @@
   "description": "Small Discord bot , just for making fun with my friends :D",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   "dependencies": {
     "discord.js": "^11.4.2",
     "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "ffmpeg": "0.0.4",
     "node-opus": "^0.3.1",
     "opusscript": "0.0.6"
   }
