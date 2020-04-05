@@ -2,38 +2,44 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const express = require('express');
 const app = express();
-const {descrip} = require('./description');
-const {testConChannel} = require('./testChannel');
+const { descrip } = require('./description');
+const { testConChannel } = require('./testChannel');
 require('dotenv').config();
 
-app.listen(process.env.PORT,()=> console.log(`run on port${process.env.PORT}`));
+app.listen(process.env.PORT, () => console.log(`run on port${process.env.PORT}`));
 client.on('message', (message) => {
     if (message.author == client.user) {
         return
     }
-    if (message.content.startsWith("*")){
+    if (message.content.startsWith("*")) {
         if (!message.guild) return;
-        let fullCommand = message.content.substr(1) ;
-        let splitCommand = fullCommand.split(" ") ;
-        let primaryCommand = splitCommand[0] ;
+        let fullCommand = message.content.substr(1);
+        let splitCommand = fullCommand.split(" ");
+        let primaryCommand = splitCommand[0];
         switch (primaryCommand) {
             case "a7a":
-                testConChannel(message ,"a7a.mp3");
+                testConChannel(message, "a7a.mp3");
                 break;
             case "555":
-                testConChannel(message ,"555.mp3");
+                testConChannel(message, "555.mp3");
                 break;
             case "tez":
-                testConChannel(message ,"tez.mp3");
+                testConChannel(message, "tez.mp3");
                 break;
-            case "fku":
-                testConChannel(message ,"fku.mp3");
-                break; 
+            case "tr":
+                testConChannel(message, "tr.mp3");
+                break;
+            case "7sb":
+                testConChannel(message, "7sb.mp3");
+                break;
+            case "3rs":
+                testConChannel(message, "3rs.mp3");
+                break;
             case "help":
-                message.channel.send(message.author.toString()+""+ descrip()+"");
-                break;    
+                message.channel.send(message.author.toString() + "" + descrip() + "");
+                break;
             default:
-                message.channel.send(message.author.toString()+' not valid command ya 3le2 enter *help ');
+                message.channel.send(message.author.toString() + ' not valid command ya 3le2 enter *help ');
                 break;
         }
     }
